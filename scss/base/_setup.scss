@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $white;
+    color: $black;
+    font-family: $primaryFont;
+    font-size: $baseFontSize;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}

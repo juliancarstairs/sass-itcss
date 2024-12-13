@@ -1,0 +1,41 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: toRem(24);
+    padding-left: toRem(24);
+}
+
+@include mediaQuery($sm) {
+    .container {
+        max-width: $sm;
+    }
+}
+
+@include mediaQuery($md) {
+    .container {
+        max-width: $md;
+    }
+}
+
+@include mediaQuery($lg) {
+    .container {
+        max-width: $lg;
+    }
+}
+
+@include mediaQuery($xl) {
+    .container {
+        max-width: $xl;
+    }
+}
+
+@include mediaQuery($xxl) {
+    .container {
+        max-width: $xxl;
+    }
+}
